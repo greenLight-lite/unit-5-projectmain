@@ -46,8 +46,8 @@ let player2 = sprites.create(img`
     . . c c c c c b 5 5 b c c c . . 
     . . c b b b c d 5 5 b c . . . . 
     `, SpriteKind.Player)
-player1.setScale(-0.2, ScaleAnchor.Middle)
-player2.setScale(-0.2, ScaleAnchor.Middle)
+player1.setScale(-0.1, ScaleAnchor.Top)
+player2.setScale(-0.1, ScaleAnchor.Top)
 characterAnimations.loopFrames(
 player1,
 [img`
