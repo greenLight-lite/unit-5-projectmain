@@ -4,6 +4,12 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile1": {
+        "data": "hwQQABAAAAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile"
+    },
     "level3": {
         "id": "level3",
         "mimeType": "application/mkcd-tilemap",
@@ -52,7 +58,7 @@
     "level1": {
         "id": "level1",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxMDAwMTAwMDAxMDUwNTA1MGExMzA1MDUwNTA1MDUwNTA1MDUwNTIxMDIwNjBhMGYxMzE3MDcwMzE1MTYwMzAzMDMwMzAzMjIwMjA3MGIwYzE0MTcwNzAzMTUwNzA3MDMwNzE1MGQyMjAzMDcwYzEwMTAxNDA3MDcwMzBkMDMwMzEyMDcwMzIyMDMwNzA3MTEwNzA3MDcwNzAzMDcwMzAzMDcwNzAzMjIwMjAzMDMwMzA3MDcwMzA5MTYwNzA3MDMwMzAzMDMyMjAyMDMwZDA3MTYwMzAzMDcwNzAzMDgwNzAzMDMwNzIyMDIwMzA3MDcwMzAzMDMwMzAzMDMwMzAzMTYwNzA3MjIwMjAzMDcwNzAzMDMwMzAzMDkwMzAzMDMwMzAzMDcwMzAyMDgwMzBkMDMwMzAzMGQwNzA3MDMwMzE2MDMwMzIyMDIwOTAzMTIwNzAzMDMwMzA3MGQwMzAzMDMwMzA4MDMwMjAzMDcwNzA3MDcwMzA3MDkwMzA3MDcwNzA3MTIwMzAzMDMwNzAzMTYwMzAzMDcwMzA3MDcxOTFkMjAwNzAzMDMwNzA3MDMwNzA3MDcwNzA5MDcxOTFhMWUxZTA3MjIwMzAzMDcwMzAzMGQwMzA3MTIwNzFhMWIxZjFlMDcyMjA0MDMwZTBlMGUwZTAzMDMwMzE4MWIxYzFjMWYwZTIzMjIyMjAwMjIyMjIyMjIyMjIyMDAwMDAyMDAwMDAwMjAyMjAwMDAwMjIwMDIwMjIwMjAwMDAwMjIwMDAwMjIyMDIwMDIyMjIyMjAwMDIyMjAwMjAwMjIwMDIwMDIwMDIwMDIyMDAwMjAwMjIwMDAyMjAyMjIwMDAwMDAwMDIwMjIwMjIyMDAwMDAwMDAwMDAyMDIwMDAwMDAyMjAwMDAwMDAyMjAwMjAwMDIwMDAwMDAwMjIyMjIyMDAwMjIyMjAyMDAwMjAwMjAyMDAyMDAwMjIwMDIyMjIyMjAwMDAwMjIwMDAyMDAyMDIyMDAwMDIyMDIyMjIyMDAwMDAwMDAyMg==",
+        "data": "MTAxMDAwMTAwMDAxMDUxYzFkMWQxZTA1MDUwNTA1MDUwNTA1MDUwNTE5MDIwNjIzMjQyNTIyMDcwMzBlMGYwMzAzMDMwMzAzMWEwMjA3MjMyNzI2MjIwNzAzMGUwNzA3MDMwNzBlMGExYTAzMDcxZjIxMjgyMDA3MDcwMzBhMDMwMzBkMDcwMzFhMDMwNzA3MGMwNzA3MDcwNzAzMDcwMzAzMDcwNzAzMWEwMjAzMDMwMzA3MDcwMzA5MGYwNzA3MDMwMzAzMDMxYTAyMDMwYTA3MGYwMzAzMDcwNzAzMDgwNzAzMDMwNzFhMDIwMzA3MDcwMzAzMDMwMzAzMDMwMzAzMGYwNzA3MWEwMjAzMDcwNzAzMDMwMzAzMDkwMzAzMDMwMzAzMDcwMzAyMDgwMzBhMDMwMzAzMGEwNzA3MDMwMzBmMDMwMzFhMDIwOTAzMGQwNzAzMDMwMzA3MGEwMzAzMDMwMzA4MDMwMjAzMDcwNzA3MDcwMzA3MDkwMzA3MDcwNzA3MGQwMzAzMDMwNzAzMGYwMzAzMDcwMzA3MDcxMTE1MTgwNzAzMDMwNzA3MDMwNzA3MDcwNzA5MDcxMTEyMTYxNjA3MWEwMzAzMDcwMzAzMGEwMzA3MGQwNzEyMTMxNzE2MDcxYTA0MDMwYjBiMGIwYjAzMDMwMzEwMTMxNDE0MTcwYjFiMjIwMDAwMjIyMjIyMjIyMjIyMDAwMDAyMDAwMDAwMjAyMjAwMDAwMjIwMDIwMjIwMjAwMDAwMjIwMDAwMjIyMDIwMDIyMjIyMjAwMDIyMjAwMjAwMjIwMDIwMDIwMDIwMDIyMDAwMjAwMjIwMDAyMjAyMjIwMDAwMDAwMDIwMjIwMjIyMDAwMDAwMDAwMDAyMDIwMDAwMDAyMjAwMDAwMDAyMjAwMjAwMDIwMDAwMDAwMjIyMjIyMDAwMjIyMjAyMDAwMjAwMjAyMDAyMDAwMjIwMDIyMjIyMjAwMDAwMjIwMDAyMDAyMDIyMDAwMDIyMDIyMjIyMDAwMDAwMDAyMg==",
         "tileset": [
             "myTiles.transparency16",
             "sprites.dungeon.darkGroundNorthWest0",
@@ -64,20 +70,12 @@
             "sprites.dungeon.darkGroundCenter",
             "sprites.dungeon.floorDark3",
             "sprites.dungeon.floorMixed",
-            "sprites.dungeon.greenInnerNorthWest",
-            "sprites.dungeon.greenOuterEast1",
-            "sprites.dungeon.greenInnerSouthWest",
             "sprites.dungeon.floorDarkDiamond",
             "sprites.dungeon.darkGroundSouth",
-            "sprites.dungeon.greenOuterSouth0",
-            "sprites.dungeon.greenOuterNorth1",
             "sprites.dungeon.stairNorth",
             "sprites.dungeon.darkGroundNorthWest1",
-            "sprites.dungeon.greenInnerNorthEast",
-            "sprites.dungeon.greenInnerSouthEast",
             "sprites.dungeon.floorDark4",
             "sprites.dungeon.floorDark2",
-            "sprites.dungeon.greenOuterWest1",
             "sprites.dungeon.stairEast",
             "sprites.dungeon.purpleInnerNorthWest",
             "sprites.dungeon.purpleOuterEast0",
@@ -89,7 +87,20 @@
             "sprites.dungeon.purpleInnerNorthEast",
             "sprites.dungeon.darkGroundNorthEast0",
             "sprites.dungeon.darkGroundEast",
-            "sprites.dungeon.darkGroundSouthEast0"
+            "sprites.dungeon.darkGroundSouthEast0",
+            "sprites.dungeon.greenOuterNorthWest",
+            "sprites.dungeon.greenOuterNorth0",
+            "sprites.dungeon.greenOuterNorthEast",
+            "sprites.dungeon.greenOuterSouthEast",
+            "sprites.dungeon.greenOuterSouthWest",
+            "sprites.dungeon.greenOuterSouth0",
+            "sprites.dungeon.greenOuterEast0",
+            "sprites.dungeon.greenOuterWest1",
+            "sprites.dungeon.greenInnerNorthWest",
+            "sprites.dungeon.greenInnerNorthEast",
+            "sprites.dungeon.greenInnerSouthEast",
+            "sprites.dungeon.greenInnerSouthWest",
+            "sprites.dungeon.greenOuterSouth1"
         ],
         "displayName": "level1"
     },

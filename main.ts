@@ -1,10 +1,22 @@
 namespace SpriteKind {
-    export const follower = SpriteKind.create()
+    export const Follower = SpriteKind.create()
 }
-sprites.onOverlap(SpriteKind.Player, SpriteKind.follower, function (sprite, otherSprite) {
+sprites.onOverlap(SpriteKind.Follower, SpriteKind.Follower, function (sprite, otherSprite) {
     otherSprite.follow(sprite)
 })
-sprites.onOverlap(SpriteKind.follower, SpriteKind.follower, function (sprite, otherSprite) {
+scene.onOverlapTile(SpriteKind.Follower, sprites.dungeon.greenOuterSouth0, function (sprite, location) {
+    if (teamChoice == 1) {
+        info.player2.changeScoreBy(1)
+    }
+    sprites.destroy(sprite)
+})
+scene.onOverlapTile(SpriteKind.Follower, sprites.dungeon.purpleInnerSouthWest, function (sprite, location) {
+    if (teamChoice == 2) {
+        info.player1.changeScoreBy(1)
+    }
+    sprites.destroy(sprite)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Follower, function (sprite, otherSprite) {
     otherSprite.follow(sprite)
 })
 controller.player1.onEvent(ControllerEvent.Connected, function () {
@@ -28,6 +40,7 @@ controller.player1.onEvent(ControllerEvent.Connected, function () {
             . . f b b b b b b c f . . . . . 
             . . . f f f f f f f . . . . . . 
             `, SpriteKind.Player)
+        tiles.placeOnTile(player1, tiles.getTileLocation(12, 14))
         controller.player1.moveSprite(player1)
         player1.setScale(0.7, ScaleAnchor.Middle)
         splitScreen.cameraFollowSprite(splitScreen.Camera.Camera1, player1)
@@ -123,6 +136,7 @@ controller.player1.onEvent(ControllerEvent.Connected, function () {
             . . c c c c c b 5 5 b c c c . . 
             . . c b b b c d 5 5 b c . . . . 
             `, SpriteKind.Player)
+        tiles.placeOnTile(player2, tiles.getTileLocation(4, 2))
         controller.player2.moveSprite(player2)
         player2.setScale(0.7, ScaleAnchor.Middle)
         splitScreen.cameraFollowSprite(splitScreen.Camera.Camera2, player2)
@@ -253,6 +267,7 @@ controller.player1.onEvent(ControllerEvent.Connected, function () {
             . . c c c c c b 5 5 b c c c . . 
             . . c b b b c d 5 5 b c . . . . 
             `, SpriteKind.Player)
+        tiles.placeOnTile(player1, tiles.getTileLocation(4, 2))
         controller.player1.moveSprite(player1)
         player1.setScale(0.7, ScaleAnchor.Middle)
         splitScreen.cameraFollowSprite(splitScreen.Camera.Camera1, player1)
@@ -382,6 +397,7 @@ controller.player1.onEvent(ControllerEvent.Connected, function () {
             . . f b b b b b b c f . . . . . 
             . . . f f f f f f f . . . . . . 
             `, SpriteKind.Player)
+        tiles.placeOnTile(player2, tiles.getTileLocation(12, 14))
         controller.player2.moveSprite(player2)
         player2.setScale(0.7, ScaleAnchor.Middle)
         splitScreen.cameraFollowSprite(splitScreen.Camera.Camera2, player2)
@@ -486,7 +502,7 @@ game.onUpdateInterval(500, function () {
         . . . c c c c . . . c c c c . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
-        `, SpriteKind.follower)
+        `, SpriteKind.Follower)
     followerPurple = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . b . . . . . . . 
@@ -504,7 +520,7 @@ game.onUpdateInterval(500, function () {
         . . . c c c c . . . c c c c . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
-        `, SpriteKind.follower)
+        `, SpriteKind.Follower)
     tiles.placeOnRandomTile(followerGreen, sprites.dungeon.floorDarkDiamond)
     tiles.placeOnRandomTile(followerPurple, sprites.dungeon.floorDark2)
 })
